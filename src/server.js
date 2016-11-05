@@ -61,3 +61,8 @@ server.listen(port, err => {
     console.info(`Server running on http://localhost:${port} [${env}]`);
 });
 
+// Create the bunlde static file
+// NODE_ENV=production node_modules/webpack/bin/webpack.js -p
+
+// start the server with babel
+// NODE_ENV=production node_modules/babel-cli/bin/babel-node.js --presets 'react,es2015' src/server.js
