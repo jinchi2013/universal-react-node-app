@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js -p",
+    "start": "NODE_ENV=production node_modules/babel-cli/bin/babel-node.js --presets 'react,es2015' src/server.js"
   },
   "repository": {
     "type": "git",
